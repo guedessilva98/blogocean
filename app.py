@@ -1,24 +1,19 @@
 
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask("hello")
+nomeAula = "Aula Python para web"
 
 
-@app.route("/")
-def hello():
-    return "Hello World"
+@app.route("/usuario")
+def usuario():
+    usuario = [1, "Andre Guedes", "Professor"]
+    alunos = ["Andre Guedes", "Lucas Santos", "Alicia Duarte", "Raiane Caroline"]
+    return render_template("index.html", alunos = alunos, usuario = usuario)
 
 @app.route("/contato")
 def contato():
-    return """
-                <html>
-                    <head>
-                        <title> Contatos </title>
-                    </head>
-                    <body>
-                        <h1>Andre Guedes</h1>
-                        <h2>dreh@email.com</h2>
-                        <h3>4432423-434234</h3>
-                    </body>
-                </html>"""
-
+    return render_template("index.html", usuario = usuario, nome = nomeAula)
+@app.route("/teste")
+def teste():
+    return "teste"
