@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-                <html>
-                    <head>
-                        <title> Contatos </title>
-                    </head>
-                    <body>
+{% extends 'base.html' %}
+    {%block content%}
                         <a href="http://www.oceanbrasil.com/" target="_blank"> Vá para a ocean Brasil </a>
                             {% if usuario[2] == "Professor" %}
                             <h2>Bem vindo Professor {{usuario[1]}}</h2>
@@ -18,5 +14,4 @@
                         <h1>Andre Guedes</h1>
                         <h2>dreh@email.com</h2>
                         <h3>4432423-434234</h3>
-                    </body>
-                </html>
+    {%endblock%}
