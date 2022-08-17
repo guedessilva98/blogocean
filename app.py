@@ -13,13 +13,13 @@ posts = [
 {
     "title": " Meu segundo post",
     "body": "Esse post é o segundo do blog",
-    "author": "Raiane Caroline",
+    "author": "André Guedes da Silva",
     "created": datetime(2022,8,17)
 },
 {
     "title": " Meu terceiro post",
     "body": "Esse post é o terceiro do blog",
-    "author": "Jezimiel Marcondes",
+    "author": "Sara Ortiz",
     "created": datetime(2022,8,17)
 },
 ]
